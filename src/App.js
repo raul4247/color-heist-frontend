@@ -1,22 +1,22 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import ColorShowing from './components/ColorShowing'
+import LoadingSpinner from './components/LoadingSpinner'
 
 import './App.css'
 
 class App extends Component {
   constructor() {
     super()
-    this.state = { url: '', status: '', title: '', rgb_colors: [], rgba_colors: [] }
+    this.state = { url: '', status: '', title: '', rgb_colors: [], rgba_colors: [] , requestLoading: false}
 
     this.updateInput = this.updateInput.bind(this)
     this.makeRequest = this.makeRequest.bind(this)
   }
 
   updateInfo(data) {
-    this.setState({ status: data.status, title: data.title, rgb_colors: data.rgb_colors, rgba_colors: data.rgba_colors })
+    this.setState({ status: data.status, title: data.title, rgb_colors: data.rgb_colors, rgba_colors: data.rgba_colors , requestLoading: false})
     console.log(this.state)
-
   }
 
   updateInput(event) {
@@ -29,6 +29,7 @@ class App extends Component {
   makeRequest(event) {
     const backend = 'https://color-heist.herokuapp.com/index.php?url='
 
+    this.setState({requestLoading: true})
     axios.get(backend + this.state.url)
       .then(response => this.updateInfo(response.data))
   }
@@ -56,7 +57,9 @@ class App extends Component {
             <a className="waves-effect waves-light btn light-green accent-4" onClick={this.makeRequest}>Buscar</a>
           </div>
           <br />
-
+          <div>
+            {this.state.requestLoading  && <LoadingSpinner /> }
+          </div>
           <div>
             {this.state.status != '' && <ColorShowing serverInfo={this.state} />}
             </div>
