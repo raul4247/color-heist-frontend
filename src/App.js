@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import ColorShowing from './components/ColorShowing'
+
 import './App.css'
 
 class App extends Component {
@@ -52,7 +54,8 @@ class App extends Component {
           <br />
 
           <div>
-          </div>
+            {this.state.status != '' && <ColorShowing serverInfo={this.state} />}
+            </div>
         </div>
 
         <footer className="page-footer indigo darken-3 ">
