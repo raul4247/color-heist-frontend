@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/color-heist-frontend/static/js/runtime~main.3f4f8a9c.js"
   },
   {
-    "revision": "03b838df9479fb0d0758",
-    "url": "/color-heist-frontend/static/js/main.c2a21564.chunk.js"
+    "revision": "925219d2f68492b67df5",
+    "url": "/color-heist-frontend/static/js/main.a6e8fab7.chunk.js"
   },
   {
     "revision": "655c12d741d1db6c4cd1",
     "url": "/color-heist-frontend/static/js/2.745c3471.chunk.js"
   },
   {
-    "revision": "03b838df9479fb0d0758",
+    "revision": "925219d2f68492b67df5",
     "url": "/color-heist-frontend/static/css/main.bf72948d.chunk.css"
   },
   {
-    "revision": "89c27c9d39a66c383fc133ac70cbccf4",
+    "revision": "62d95d2cb4b0132c26e1b20e9bbd373b",
     "url": "/color-heist-frontend/index.html"
   }
 ];

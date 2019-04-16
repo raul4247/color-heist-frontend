@@ -1,13 +1,13 @@
 {
   "main.css": "/color-heist-frontend/static/css/main.bf72948d.chunk.css",
-  "main.js": "/color-heist-frontend/static/js/main.c2a21564.chunk.js",
-  "main.js.map": "/color-heist-frontend/static/js/main.c2a21564.chunk.js.map",
+  "main.js": "/color-heist-frontend/static/js/main.a6e8fab7.chunk.js",
+  "main.js.map": "/color-heist-frontend/static/js/main.a6e8fab7.chunk.js.map",
   "runtime~main.js": "/color-heist-frontend/static/js/runtime~main.3f4f8a9c.js",
   "runtime~main.js.map": "/color-heist-frontend/static/js/runtime~main.3f4f8a9c.js.map",
   "static/js/2.745c3471.chunk.js": "/color-heist-frontend/static/js/2.745c3471.chunk.js",
   "static/js/2.745c3471.chunk.js.map": "/color-heist-frontend/static/js/2.745c3471.chunk.js.map",
   "index.html": "/color-heist-frontend/index.html",
-  "precache-manifest.a515b5dc68cdcfbd5bb4eb04e94fe2d7.js": "/color-heist-frontend/precache-manifest.a515b5dc68cdcfbd5bb4eb04e94fe2d7.js",
+  "precache-manifest.db2bfe659422a9cbc83ddd747dcdbbfb.js": "/color-heist-frontend/precache-manifest.db2bfe659422a9cbc83ddd747dcdbbfb.js",
   "service-worker.js": "/color-heist-frontend/service-worker.js",
   "static/css/main.bf72948d.chunk.css.map": "/color-heist-frontend/static/css/main.bf72948d.chunk.css.map"
 }
