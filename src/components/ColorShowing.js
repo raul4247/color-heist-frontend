@@ -3,10 +3,6 @@ import './ColorShowing.css'
 import { FontColor, nameColorHEX } from '../services/colorHelper.js'
 
 class ColorShowing extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div className="row center">

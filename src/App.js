@@ -39,12 +39,16 @@ class App extends Component {
         <nav className="grey darken-4">
           <div className="nav-wrapper">
             <a href="#" className="brand-logo">Color Heist</a>
-
           </div>
         </nav>
         <br />
 
         <div className="content container center-align">
+          <div>
+            <h4>Pegue uma paleta de cores!</h4>
+            <p>Entre com uma url válida de um site para obter as cores utizadas!</p>
+          </div>
+          <br />
           <div className="main-input center-align">
             <label>
               URL:<input className="center-align" type="text" name="url" onChange={this.updateInput} />
