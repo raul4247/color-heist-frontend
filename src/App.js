@@ -3,7 +3,33 @@ import axios from 'axios'
 import './App.css'
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = { url: '', status: '', title: '', rgb_colors: [], rgba_colors: [] }
 
+    this.updateInput = this.updateInput.bind(this)
+    this.makeRequest = this.makeRequest.bind(this)
+  }
+
+  updateInfo(data) {
+    this.setState({ status: data.status, title: data.title, rgb_colors: data.rgb_colors, rgba_colors: data.rgba_colors })
+    console.log(this.state)
+
+  }
+
+  updateInput(event) {
+    let url = event.target.value
+    if (!/^https?:\/\//i.test(url))
+      url = 'http://' + url;
+    this.setState({ url: url })
+  }
+
+  makeRequest(event) {
+    const backend = 'https://color-heist.herokuapp.com/index.php?url='
+
+    axios.get(backend + this.state.url)
+      .then(response => this.updateInfo(response.data))
+  }
 
   render() {
     return (
