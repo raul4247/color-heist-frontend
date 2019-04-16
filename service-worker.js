@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/color-heist-frontend/precache-manifest.fec2de60f8f6fe7b326b78e61949883c.js"
+  "/color-heist-frontend/precache-manifest.a515b5dc68cdcfbd5bb4eb04e94fe2d7.js"
 );
 
 workbox.clientsClaim();
