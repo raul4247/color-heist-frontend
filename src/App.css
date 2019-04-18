@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100i');
+
+.brand-logo{
+  font-family: 'Roboto', sans-serif;
+}
+
 .main-input {
-  width: 30%;
+  width: auto;
   margin: 0 auto;
 }
 

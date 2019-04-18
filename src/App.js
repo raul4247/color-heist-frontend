@@ -50,7 +50,7 @@ class App extends Component {
             <p>Entre com uma url válida de um site para obter as cores utizadas!</p>
           </div>
           <br />
-          <div className="main-input center-align">
+          <div className="main-input center center-align">
             <label>
               URL:<input className="center-align" type="text" name="url" onChange={this.updateInput} />
             </label>
